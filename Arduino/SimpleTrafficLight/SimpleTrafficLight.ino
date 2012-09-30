@@ -1,11 +1,11 @@
 /*
-This program resembles a basic traffic light
-that loops between 3 different coloured LEDs
+This program resembles a basic traffic light.
+It cycles between 3 different coloured LEDs
 and buzzes in between light changes.
 */
 
  int buzzer=8;//Connect the buzzer Pin to Digital Pin 8  
- int greeLed=9; //Connect green LED to Digital Pin 10
+ int greenLed=9; //Connect green LED to Digital Pin 9
  int yellowLed=10; //Connect yellow LED to Digital Pin 10
  int redLed=11; //Connect red LED to Digital Pin 11 
 
@@ -20,9 +20,6 @@ void setup()
 void loop() 
 { 
 
-  while(1)  //loop forever
-  {  //Start of loop
-  
    digitalWrite(buzzer,HIGH); //Start making a sound
    delay(10); //Wait 1ms 
    digitalWrite(buzzer,LOW); //Stop making a sound
@@ -45,10 +42,6 @@ void loop()
       
    digitalWrite(redLed,HIGH); //Set red LED to high  
    delay(1000); //Delay 1 second 
-   digitalWrite(redLed,LOW); //Set red LED to low  
- 
- }  //end of loop
-  
-  
-  
-}
+   digitalWrite(redLed,LOW); //Set red LED to low   
+   
+}//end of loop
